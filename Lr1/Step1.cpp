@@ -8,11 +8,18 @@
 int power(int, int);
 
 int main() {
-    int i, k;
-    for (i = 0; i < 10; i++) {
-        k = power(2, i);
-        std::cout << "2^" << i << " = " << k << std::endl;
-    }
+    int base, exponent;
+
+    // Запрашиваем у пользователя основание и показатель степени
+    std::cout << "Enter base: ";
+    std::cin >> base;
+
+    std::cout << "Enter exponent (non-negative integer): ";
+    std::cin >> exponent;
+
+    // Вычисляем степень и выводим результат
+    std::cout << base << "^" << exponent << " = " << power(base, exponent) << std::endl;
+
     return 0;
 }
 
