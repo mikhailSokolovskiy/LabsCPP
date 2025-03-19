@@ -1,0 +1,2 @@
+This is a test text.
+More text after clearing the error state.
